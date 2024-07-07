@@ -1,9 +1,9 @@
 import HeroSection from '@/components/HeroSection'
 import Projects from '@/components/Projects'
 import SkillsSection from '@/components/SkillsSection'
-import Image from 'next/image'
+import { getProjects } from '@/sanity/sanity-utils'
 
-export default function Home() {
+export default async function Home() {
   return (
     <div>
       <HeroSection />
