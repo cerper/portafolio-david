@@ -7,7 +7,7 @@ const Projects = async () => {
     <div className="h-[100vh]" id="proyectos">
       {projects.map((project) => {
         return (
-          <div key={project._id} className="text-black">
+          <div key={project._id} className="text-white">
             {project.name}
           </div>
         )

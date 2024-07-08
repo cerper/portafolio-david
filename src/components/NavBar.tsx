@@ -1,11 +1,11 @@
-import { Link as ScrollLink } from 'react-scroll'
+import { Link as ScrollLink } from "react-scroll";
 
 const linkData = [
-  { name: 'home', target: 'home', offset: 0 },
-  { name: 'habilidades', target: 'habilidades', offset: 0 },
-  { name: 'proyectos', target: 'proyectos', offset: 0 },
-  { name: 'contacto', target: 'contacto', offset: 0 },
-]
+  { name: "home", target: "home", offset: -100 },
+  { name: "habilidades", target: "habilidades", offset: 0 },
+  { name: "proyectos", target: "proyectos", offset: 0 },
+  { name: "contacto", target: "contacto", offset: 0 },
+];
 
 const Navbar = ({ containerStyles }: { containerStyles: string }) => {
   return (
@@ -22,9 +22,9 @@ const Navbar = ({ containerStyles }: { containerStyles: string }) => {
           >
             {link.name}
           </ScrollLink>
-        )
+        );
       })}
     </nav>
-  )
-}
-export default Navbar
+  );
+};
+export default Navbar;

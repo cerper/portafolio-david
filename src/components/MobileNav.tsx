@@ -8,8 +8,6 @@ const linkData = [
 ]
 const MobileNav = ({ containerStyles }: { containerStyles: string }) => {
   return (
-    <div className={`${containerStyles}`}>
-      {' '}
       <nav className={`${containerStyles}`}>
         {linkData.map((link, index) => {
           return (
@@ -26,7 +24,6 @@ const MobileNav = ({ containerStyles }: { containerStyles: string }) => {
           )
         })}
       </nav>
-    </div>
   )
 }
 export default MobileNav
