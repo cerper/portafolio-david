@@ -1,7 +1,7 @@
 import { createClient, groq } from 'next-sanity'
-import { Blog } from '@/app/type/Blog'
+import { Project } from '@/app/type/Project'
 
-export async function getProjects(): Promise<Blog[]> {
+export async function getProjects(): Promise<Project[]> {
   const client = createClient({
     projectId: 'kkn4kjzj',
     dataset: 'production',
@@ -15,5 +15,25 @@ export async function getProjects(): Promise<Blog[]> {
       'image':image.asset->url,
       url,
       content,
+    }`)
+}
+
+export async function getSlug(slug: string): Promise<Project> {
+  const client = createClient({
+    projectId: 'kkn4kjzj',
+    dataset: 'production',
+    apiVersion: '2024-07-04',
+  })
+  return client.fetch(groq`*[_type == "project" && slug.current == $slug ][0] |{
+    _id,
+    _createdAt,
+    name,
+    "slug":slug.current,
+    "image": image.asset ->url,
+    url,
+    content
+    
+    
+    
     }`)
 }
