@@ -8,9 +8,9 @@ const Projects = async () => {
   const projects: Project[] = await getProjects()
   console.log(projects)
   return (
-    <div className="h-[100vh]" id="proyectos">
+    <div id="proyectos">
       <h2 className="text-center text-5xl font-oswald">Proyectos</h2>
-      <div className="grid grid-cols-2 gap-8 place-content-center place-items-center mt-8 rounded-3xl">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 place-content-center place-items-center mt-8 rounded-3xl">
         {projects.map((project) => {
           return (
             <div
@@ -26,7 +26,7 @@ const Projects = async () => {
                   className="aspect-[6/4]  rounded-lg   object-center hover:scale-105 transition-all ease-in duration-200"
                 />
 
-                <div className="flex flex-col justify-center items-center mt-4">
+                <div className="flex flex-col justify-center items-center mt-2">
                   <p className="my-4 text-xl font-semibold">{project.name}</p>
                   <Button variant={'default'}>Ver más</Button>
                 </div>
