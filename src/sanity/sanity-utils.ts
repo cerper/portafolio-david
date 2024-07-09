@@ -24,7 +24,8 @@ export async function getSlug(slug: string): Promise<Project> {
     dataset: 'production',
     apiVersion: '2024-07-04',
   })
-  return client.fetch(groq`*[_type == "project" && slug.current == $slug ][0] |{
+  return client.fetch(
+    groq`*[_type == "project" && slug.current == $slug ][0] |{
     _id,
     _createdAt,
     name,
@@ -35,5 +36,9 @@ export async function getSlug(slug: string): Promise<Project> {
     
     
     
-    }`)
+    }`,
+    { slug }
+  )
 }
+export const revalidate = 60
+export const dynamic = 'force-dynamic'
