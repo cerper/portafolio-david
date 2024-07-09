@@ -77,15 +77,15 @@ const SkillsSection = () => {
             )
           })}
         </div>
-        <div className="w-[200px] lg:w-[800px]  grid-cols-1 grid lg:grid-cols-3 mt-16 gap-8 lg:gap-28">
+        <div className="w-[410px] lg:w-[800px]  grid-cols-3 grid lg:grid-cols-3 mt-16 gap-8 lg:gap-28">
           {logo2.map((logos, index) => {
             return (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center text-4xl "
+                className="flex flex-col w-full items-center justify-center text-4xl "
               >
                 {logos.icon}
-                <div className="text-xl font-oswald">{logos.name}</div>
+                <div className="text-lg font-oswald">{logos.name}</div>
               </div>
             )
           })}
