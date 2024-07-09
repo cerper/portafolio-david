@@ -61,9 +61,9 @@ const logo2 = [
 
 const SkillsSection = () => {
   return (
-    <div className="h-[80vh] md:h-[120vh] lg:h-[100vh] " id="habilidades">
+    <div className="h-[80vh] md:h-[120vh] lg:h-[80vh] " id="habilidades">
       <div className="flex flex-col justify-center items-center">
-        <h3 className="uppercase text-4xl font-oswald mt-8">mis habilidades</h3>
+        <h3 className="uppercase text-5xl font-oswald mt-8">mis habilidades</h3>
         <div className="grid-cols-2 mx-auto grid lg:grid-cols-4 mt-16 text-center place-content-center place-items-center gap-8  w-full">
           {logos.map((logo, index) => {
             return (
