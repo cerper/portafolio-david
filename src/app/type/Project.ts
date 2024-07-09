@@ -5,7 +5,7 @@ export type Project = {
   _createdAt: Date
   name: string
   slug: String
-  image: String
-  url: String
+  image: string
+  url: string
   content: PortableTextBlock[]
 }
