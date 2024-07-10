@@ -25,7 +25,7 @@ export async function getSlug(slug: string): Promise<Project> {
     apiVersion: '2024-07-04',
   })
   return client.fetch(
-    groq`*[_type == "project" && slug.current == $slug ][0] |{
+    groq`*[_type == "project" && slug.current == $slug ][0] | {
     _id,
     _createdAt,
     name,
