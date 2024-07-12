@@ -10,7 +10,7 @@ const Projects = async () => {
   return (
     <div className="mt-16" id="proyectos">
       <h2 className="text-center text-5xl font-oswald">Proyectos</h2>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 place-content-center place-items-center mt-8 rounded-3xl">
+      <div className="grid grid-cols-1 lg:grid-cols-2  gap-4 place-content-center place-items-center mt-16 rounded-3xl">
         {projects.map((project) => {
           return (
             <div
@@ -21,7 +21,7 @@ const Projects = async () => {
                 <Image
                   src={project.image}
                   alt={project.name}
-                  width={400}
+                  width={300}
                   height={200}
                   className="aspect-[6/4]  rounded-lg   object-center hover:scale-105 transition-all ease-in duration-200"
                 />
