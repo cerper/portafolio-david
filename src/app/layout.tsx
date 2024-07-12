@@ -19,7 +19,7 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-  title: 'Portafolios - David Lovera',
+  title: 'Portafolio - David Lovera',
   description: 'Entra y ve todos mis proyectos',
 }
 
