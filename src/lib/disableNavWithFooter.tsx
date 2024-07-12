@@ -5,4 +5,5 @@ export const disableNavWithFooter = [
   '/project/gym-app',
   '/project/pagina-odontologica',
   '/project/ecommerce',
+  '/project/blog-app',
 ]

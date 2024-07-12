@@ -13,7 +13,7 @@ export default async function pageInfo({ params }: ProjectProps) {
   const infoProject = await getSlug(slug)
   return (
     <div className=" flex flex-col items-center justify-center">
-      <h2 className="font-oswald text-4xl lg:text-6xl mb-8">
+      <h2 className="font-oswald mt-4 text-4xl lg:text-6xl mb-8">
         {infoProject.name}
       </h2>
       <Link href={infoProject.url} className="my-8">
