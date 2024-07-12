@@ -4,7 +4,7 @@ import { BsFillTelephoneFill } from 'react-icons/bs'
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-purple-50 pt-24 " id="contacto">
+    <footer className="w-full bg-white pt-24 " id="contacto">
       <div className="container mx-auto pb-14 ">
         {' '}
         <div className="grid grid-cols-1">
