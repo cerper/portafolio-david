@@ -19,7 +19,7 @@ const Header = () => {
               <Image
                 src={logo}
                 alt="logo"
-                width={120}
+                width={100}
                 height={70}
                 className="mt-0 h-[90px] lg:h-[120px] lg:mt-0"
               />

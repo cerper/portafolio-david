@@ -13,7 +13,7 @@ const Projects = async () => {
       <div className="grid grid-cols-1 lg:grid-cols-2  gap-4 place-content-center place-items-center mt-16 rounded-3xl">
         {projects.map((project) => {
           return (
-            <div
+            <main
               key={project._id}
               className="text-black flex flex-col items-center justify-center"
             >
@@ -31,7 +31,7 @@ const Projects = async () => {
                   <Button variant={'default'}>Ver más</Button>
                 </div>
               </Link>
-            </div>
+            </main>
           )
         })}
       </div>
