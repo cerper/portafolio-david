@@ -6,11 +6,12 @@ const HeroSection = () => {
         <p className="mt-4 text-center text-3xl">Desarrollador de Sofware</p>
         {/*aca ira la imagen mia  */}
         <p className="w-[300px] mb-4 lg:mb-0 lg:w-[900px] text-xl lg:text-2xl text-center mt-10">
-          Soy un programador de 27 años especializado en el desarrollo frontend.
-          Utilizo Next.js como mi framework principal para crear aplicaciones
-          web rápidas, eficientes y con una excelente experiencia de usuario. Mi
-          pasión es convertir ideas en productos digitales que no solo se vean
-          bien, sino que también funcionen a la perfección
+          Soy un programador full-stack de 27 años especializado en el
+          desarrollo frontend. Utilizo Next.js como framework para el front-end
+          para crear aplicaciones web rápidas, eficientes y con una excelente
+          experiencia de usuario y NodeJs con Express para el backend. Mi pasión
+          es convertir ideas en productos digitales que no solo se vean bien,
+          sino que también funcionen a la perfección
         </p>
       </div>
     </div>

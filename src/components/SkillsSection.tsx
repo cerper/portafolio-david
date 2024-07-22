@@ -5,10 +5,11 @@ import { RiTailwindCssFill } from 'react-icons/ri'
 import { SiTypescript } from 'react-icons/si'
 import { SiPrisma } from 'react-icons/si'
 import { DiMongodb } from 'react-icons/di'
-import { FaPython } from 'react-icons/fa'
-import { DiDjango } from 'react-icons/di'
 import { SiSanity } from 'react-icons/si'
 import { SiZod } from 'react-icons/si'
+import { SiPostman } from 'react-icons/si'
+import { FaNodeJs } from 'react-icons/fa'
+import { SiExpress } from 'react-icons/si'
 
 const logos = [
   {
@@ -35,13 +36,18 @@ const logos = [
     name: 'MongoDB',
     icon: <DiMongodb />,
   },
+
   {
-    name: 'Python',
-    icon: <FaPython />,
+    name: 'Postman',
+    icon: <SiPostman />,
   },
   {
-    name: 'Django',
-    icon: <DiDjango />,
+    name: 'NodeJS',
+    icon: <FaNodeJs />,
+  },
+  {
+    name: 'Express',
+    icon: <SiExpress />,
   },
 ]
 const logo2 = [
@@ -64,7 +70,7 @@ const SkillsSection = () => {
     <div id="habilidades">
       <div className="flex flex-col justify-center items-center">
         <h3 className="uppercase text-5xl font-oswald mt-8">mis habilidades</h3>
-        <div className="grid-cols-2 mx-auto grid lg:grid-cols-4 mt-16 text-center place-content-center place-items-center gap-8  w-full">
+        <div className="grid-cols-2 mx-auto grid lg:grid-cols-3 mt-16 text-center place-content-center place-items-center gap-8  w-full">
           {logos.map((logo, index) => {
             return (
               <div
