@@ -118,7 +118,9 @@ const Footer = () => {
         </div>
       </div>
       <p className="text-center text-lg font-oswald font-bold">
-        Diseñado por David Lovera
+        <a href=" linkedin.com/in/david-lovera-b26bab117/">
+          Diseñado por David Lovera
+        </a>
       </p>
     </footer>
   )

@@ -10,6 +10,7 @@ import { SiZod } from 'react-icons/si'
 import { SiPostman } from 'react-icons/si'
 import { FaNodeJs } from 'react-icons/fa'
 import { SiExpress } from 'react-icons/si'
+import { SiShadcnui } from 'react-icons/si'
 
 const logos = [
   {
@@ -49,6 +50,10 @@ const logos = [
     name: 'Express',
     icon: <SiExpress />,
   },
+  {
+    name: 'Shadcn',
+    icon: <SiShadcnui />,
+  },
 ]
 const logo2 = [
   {
@@ -59,6 +64,7 @@ const logo2 = [
     name: 'React-Hook-Form',
     icon: <SiReacthookform />,
   },
+
   {
     name: 'Sanity',
     icon: <SiSanity />,
@@ -70,7 +76,7 @@ const SkillsSection = () => {
     <div id="habilidades">
       <div className="flex flex-col justify-center items-center">
         <h3 className="uppercase text-5xl font-oswald mt-8">mis habilidades</h3>
-        <div className="grid-cols-2 mx-auto grid lg:grid-cols-3 mt-16 text-center place-content-center place-items-center gap-8  w-full">
+        <div className="grid-cols-2 mx-auto grid lg:grid-cols-5 mt-16 text-center place-content-center place-items-center gap-8  w-full">
           {logos.map((logo, index) => {
             return (
               <div
